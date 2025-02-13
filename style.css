@@ -334,7 +334,7 @@ body {
         animation: 4s spin linear infinite;
     }
     .outline2::after, .outline2::before{
-        background-image: conic-gradient(from var(--angle), lightblue, white, lightblue, pink, pink,  lightblue);
+        background-image: conic-gradient(from var(--angle), lime, yellow, lime);
     }
     .box2 p{
         padding-top: 20px;
