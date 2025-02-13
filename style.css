@@ -360,7 +360,7 @@ body {
         transform: translateY(-69%); /* 400px is the height of the container */
       }
       .box:hover .website-image1 {
-        transform: translateY(-73%); /* 400px is the height of the container */
+        transform: translateY(-56%); /* 400px is the height of the container */
       }
     
     
@@ -392,7 +392,7 @@ body {
             transform: translateY(-70%); /* 400px is the height of the container */
           }
           .box:hover .website-image1 {
-            transform: translateY(-73%); /* 400px is the height of the container */
+            transform: translateY(-57%); /* 400px is the height of the container */
           }
         .box {
             min-width: 300px;
