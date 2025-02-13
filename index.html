@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menuwrapper">
+        <div class="navbar">
+            <div class="logo">
+                <p>EDVIN.</p>
+            </div>
+            <ul class="links">
+                <li><a href="#kundcase">Kundcase</a></li>
+                <li><a href="about">process</a></li>
+                <li><a href="services">faq</a></li>
+                <li><a href="contact">om oss</a></li>
+            </ul>
+            <a href="#" class="action_btn">KOM IGÅNG <span class="arrow">&rarr;</span></a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Kundcase</a></li>
+            <li><a href="about">Process</a></li>
+            <li><a href="services">Information</a></li>
+            <li><a href="contact">Kontakt</a></li>
+            <li><a href="#" class="action_btn">KOM IGÅNG <span class="arrow"> &rarr;</span></a></li>
+        </div>
+    </header>
+    <section id="main">
+        <div class="mainwrapper">
+            <div class="maincontainer">
+                <div class="maintext">
+                    <h1>vi skapar sveriges <span class="outline">snabbaste</span> hemsidor</h1>
+                    <p>Med år av erfarenhet kan vi garantera dig skräddarsydda hemsidor efter ditt eller företagets behov. Vi jobbar effektivt för att ta fram super snabba hemsidor för att förhindra missnöjen av potentiella kunder.</p>
+                </div>
+                <div class="cirkelwrapper">
+                    <div class="maincirkel">
+                        <p>Kontakta Oss </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kundcase">
+    <div class="boxwrapper">
+            <h2>kundcase</h2>
+        <div class="boxwidth">
+            <div class="boxcontainer">
+                <div class="boxoutline outline1">
+                    <div class="box box1">
+                        <img src="bilder/test.webp" alt="Website 1" class="website-image">           
+                    </div>
+                </div>
+                <div class="boxoutline outline2">
+                    <div class="box box2">
+                        <img src="images/nordiskafull.png" alt="Website 1" class="website-image1">                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
