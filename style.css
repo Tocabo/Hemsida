@@ -291,7 +291,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 5;
     }
     .boxcontainer {
         width: 1200px;
@@ -306,9 +305,9 @@ body {
         background: #2f4454;
         height: 550px;
         border-radius: 20px;
-        box-shadow: 4px 4px 10px 5px rgba(10, 10, 10, 0.2);
-        position: relative;
         overflow: hidden;
+        border: 5px #2f4454 solid;
+        position: relative;
     }
     .box2 p{
         padding-top: 20px;
